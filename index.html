@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <title>ロックの系譜 — Tree of Rock</title>
+  <meta name="description" content="ロック音楽のジャンルの系譜を、生命の進化のように辿るインタラクティブ・ツリー。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="aurora"></div>
+  <canvas id="spores"></canvas>
+
+  <header>
+    <div class="brand">
+      <h1>ロックの系譜</h1>
+      <p class="sub">TREE OF ROCK — 音楽の進化を辿る</p>
+    </div>
+    <div class="spacer"></div>
+    <div class="hint">
+      <b>ジャンル</b>をタップで詳細・試聴 ／ <b>年代</b>をタップで時代背景 ／ ドラッグで移動・ホイールで拡大
+    </div>
+  </header>
+
+  <div id="viewport">
+    <div id="stage"></div>
+  </div>
+
+  <div class="controls">
+    <button id="zin" title="拡大">＋</button>
+    <button id="zout" title="縮小">－</button>
+    <button id="zfit" title="全体表示">⤢</button>
+  </div>
+
+  <div class="legend">
+    <span class="title">枝の色 = ジャンルの系統（色相で近い系譜を示唆）</span>
+    <span class="row"><span class="dot" style="background:hsl(205,70%,55%)"></span>ブルース系</span>
+    <span class="row"><span class="dot" style="background:hsl(0,70%,55%)"></span>ロックンロール/パンク系</span>
+    <span class="row"><span class="dot" style="background:hsl(230,70%,58%)"></span>メタル系</span>
+    <span class="row"><span class="dot" style="background:hsl(300,60%,60%)"></span>サイケ/プログレ系</span>
+    <span class="row"><span class="dot" style="background:hsl(175,60%,55%)"></span>電子/ニューウェイヴ系</span>
+    <span class="row"><span class="dot" style="background:hsl(100,50%,55%)"></span>オルタナ/インディー系</span>
+  </div>
+
+  <!-- floating window -->
+  <div id="scrim" class="scrim"></div>
+  <div id="float" class="float"></div>
+
+  <!-- intro overlay -->
+  <div id="intro">
+    <div class="inner">
+      <p class="eyebrow">A N   E V O L U T I O N   O F   S O U N D</p>
+      <h1>ロックの系譜</h1>
+      <p>
+        ブルースという一滴から、パンク、メタル、サイケ、オルタナへ。<br />
+        ロックは一本の川ではなく、幾つもの源流が合流し、枝分かれし、<br />
+        時代の空気を吸って進化してきた「生命の樹」です。<br />
+        枝をたどり、音を鳴らし、その分岐の物語に触れてください。
+      </p>
+      <button id="enter">系譜をたどる →</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

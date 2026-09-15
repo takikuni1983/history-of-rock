@@ -1,0 +1,547 @@
+/* =====================================================================
+   ROCK GENEALOGY — STYLES
+   有機的で情緒的なデザイン。原始の海(primordial soup)から進化が芽吹く。
+   ===================================================================== */
+
+:root {
+  --bg-0: #05060b;
+  --bg-1: #0a0d1a;
+  --bg-2: #0f1424;
+  --ink: #eef1fb;
+  --ink-dim: #a9b2cf;
+  --ink-faint: #6b7493;
+  --line: rgba(150, 170, 220, 0.18);
+  --glass: rgba(18, 22, 40, 0.72);
+  --glass-brd: rgba(150, 170, 220, 0.22);
+  --accent: #7fe3d0;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  --font: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg-0);
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* ------- primordial background layers ------- */
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(60vw 60vw at 18% 12%, rgba(60, 120, 160, 0.16), transparent 60%),
+    radial-gradient(55vw 55vw at 82% 30%, rgba(150, 70, 150, 0.15), transparent 60%),
+    radial-gradient(70vw 70vw at 40% 95%, rgba(70, 150, 120, 0.14), transparent 60%),
+    linear-gradient(160deg, var(--bg-1), var(--bg-0) 55%, #06040a);
+  animation: auroraShift 26s ease-in-out infinite alternate;
+}
+@keyframes auroraShift {
+  0%   { filter: hue-rotate(0deg) saturate(1); transform: scale(1); }
+  100% { filter: hue-rotate(24deg) saturate(1.15); transform: scale(1.06); }
+}
+
+/* drifting spores / particles */
+#spores {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ------- header ------- */
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: calc(env(safe-area-inset-top, 0px) + 14px) 22px 14px;
+  background: linear-gradient(180deg, rgba(5, 6, 11, 0.9), rgba(5, 6, 11, 0));
+  pointer-events: none;
+}
+header .brand { pointer-events: auto; }
+header h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(17px, 2.4vw, 26px);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  background: linear-gradient(120deg, #eaf7ff, #b6a8ff 40%, #7fe3d0 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+header .sub {
+  margin: 3px 0 0;
+  font-size: 11.5px;
+  color: var(--ink-faint);
+  letter-spacing: 0.14em;
+}
+header .spacer { flex: 1; }
+.hint {
+  pointer-events: auto;
+  font-size: 11px;
+  color: var(--ink-dim);
+  background: var(--glass);
+  border: 1px solid var(--glass-brd);
+  border-radius: 999px;
+  padding: 7px 14px;
+  backdrop-filter: blur(10px);
+  max-width: 40vw;
+}
+.hint b { color: var(--accent); font-weight: 700; }
+@media (max-width: 720px) { .hint { display: none; } }
+
+/* ------- canvas / tree viewport ------- */
+#viewport {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+#viewport.grabbing { cursor: grabbing; }
+
+#stage {
+  position: absolute;
+  top: 0; left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+svg.tree { display: block; overflow: visible; }
+
+/* era ruler bands */
+.era-band { transition: opacity 0.4s ease; }
+.era-band rect { fill: rgba(255, 255, 255, 0.012); }
+.era-band line { stroke: var(--line); stroke-dasharray: 2 8; }
+.era-label {
+  fill: var(--ink-faint);
+  font-family: var(--serif);
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+.era-label:hover { fill: var(--accent); }
+.era-title {
+  fill: var(--ink-dim);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+/* edges — the branches of the tree of life */
+.edge {
+  fill: none;
+  stroke-linecap: round;
+  stroke: rgba(150, 175, 220, 0.22);
+  stroke-width: 2;
+  transition: stroke 0.35s ease, stroke-width 0.35s ease, opacity 0.35s ease;
+}
+.edge.grown { animation: none; }
+.edge.lit { stroke-width: 3.2; }
+.edge.dim { opacity: 0.06; }
+
+/* nodes — living cells / organisms */
+.node { cursor: pointer; }
+.node .halo {
+  transition: opacity 0.4s ease, r 0.4s ease;
+  opacity: 0.5;
+}
+.node .cell {
+  transition: transform 0.35s cubic-bezier(.2,.9,.25,1.3), filter 0.35s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.node:hover .cell { transform: scale(1.14); }
+.node .cell-core { transition: opacity 0.35s ease; }
+.node text.label {
+  fill: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  paint-order: stroke;
+  stroke: rgba(3, 5, 12, 0.85);
+  stroke-width: 4px;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.node text.label-en {
+  fill: var(--ink-faint);
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  paint-order: stroke;
+  stroke: rgba(3, 5, 12, 0.8);
+  stroke-width: 3px;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.node.dim { opacity: 0.22; }
+.node.dim text { opacity: 0.3; }
+
+/* gentle life-like breathing on halos */
+@keyframes breathe {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50%      { opacity: 0.7;  transform: scale(1.12); }
+}
+.node .halo.breathe {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: breathe var(--dur, 5s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+/* ------- zoom controls ------- */
+.controls {
+  position: fixed;
+  right: 18px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 18px);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.controls button {
+  width: 44px; height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--glass-brd);
+  background: var(--glass);
+  color: var(--ink);
+  font-size: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+.controls button:hover { background: rgba(40, 48, 78, 0.85); }
+.controls button:active { transform: scale(0.92); }
+
+/* ------- legend ------- */
+.legend {
+  position: fixed;
+  left: 18px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 18px);
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  max-width: min(46vw, 520px);
+  padding: 12px 16px;
+  background: var(--glass);
+  border: 1px solid var(--glass-brd);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  font-size: 11px;
+  color: var(--ink-dim);
+}
+.legend .row { display: flex; align-items: center; gap: 7px; }
+.legend .dot { width: 9px; height: 9px; border-radius: 50%; }
+.legend .title {
+  width: 100%; color: var(--ink-faint);
+  letter-spacing: 0.12em; font-size: 10px; margin-bottom: 2px;
+}
+@media (max-width: 720px) {
+  .legend { display: none; }
+}
+
+/* ===================================================================
+   FLOATING WINDOW (modal)
+   =================================================================== */
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(3, 4, 10, 0.55);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.scrim.open { opacity: 1; pointer-events: auto; }
+
+.float {
+  position: fixed;
+  z-index: 41;
+  top: 50%; left: 50%;
+  width: min(680px, 94vw);
+  max-height: min(86vh, 900px);
+  transform: translate(-50%, -46%) scale(0.94);
+  opacity: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(24, 28, 50, 0.96), rgba(12, 15, 28, 0.97));
+  border: 1px solid var(--glass-brd);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: opacity 0.45s cubic-bezier(.2,.9,.25,1),
+              transform 0.55s cubic-bezier(.2,.9,.25,1.2);
+  display: flex;
+  flex-direction: column;
+}
+.float.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.float .fhead {
+  position: relative;
+  padding: 26px 26px 20px;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+.float .fhead .glow {
+  position: absolute;
+  inset: -40% -10% auto -10%;
+  height: 220px;
+  filter: blur(38px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.float .kicker {
+  position: relative;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+.float h2 {
+  position: relative;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(22px, 4vw, 32px);
+  line-height: 1.15;
+}
+.float .en {
+  position: relative;
+  margin: 4px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+}
+.float .years {
+  position: relative;
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 13px;
+  border: 1px solid var(--glass-brd);
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--ink-dim);
+}
+.float .tagline {
+  position: relative;
+  margin: 12px 0 0;
+  font-family: var(--serif);
+  font-size: 14px;
+  color: var(--ink-dim);
+  font-style: italic;
+}
+
+.float .fbody {
+  padding: 8px 26px 26px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.float .fbody::-webkit-scrollbar { width: 9px; }
+.float .fbody::-webkit-scrollbar-thumb {
+  background: rgba(150, 170, 220, 0.2); border-radius: 9px;
+}
+
+.sect { margin-top: 22px; }
+.sect > h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 9px;
+  font-size: 12.5px;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}
+.sect > h3 .ic { font-size: 15px; filter: saturate(1.2); }
+.sect p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--ink);
+}
+.sect.interp p { color: #e7deff; }
+.lineage-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.chip {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-brd);
+  background: rgba(255,255,255,0.03);
+  color: var(--ink-dim);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.chip:hover { background: rgba(127,227,208,0.14); color: var(--ink); border-color: var(--accent); }
+.chip .arrow { color: var(--ink-faint); margin-right: 4px; }
+
+/* artists */
+.artist {
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.028);
+  border: 1px solid var(--line);
+}
+.artist .aname {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.artist .anote {
+  margin: 6px 0 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink-dim);
+}
+.songs { display: flex; flex-direction: column; gap: 8px; }
+.song {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.12s ease, border-color 0.2s ease;
+}
+.song:hover { background: rgba(127, 227, 208, 0.1); border-color: rgba(127,227,208,0.4); }
+.song:active { transform: scale(0.99); }
+.song .play {
+  flex: 0 0 auto;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--accent), #6aa9ff);
+  color: #05121a;
+  font-size: 13px;
+  box-shadow: 0 4px 16px rgba(127, 227, 208, 0.3);
+}
+.song.playing .play { background: linear-gradient(135deg, #ff9bd0, #ffd27f); }
+.song .stitle { flex: 1; font-size: 14px; font-weight: 600; }
+.song .ext {
+  flex: 0 0 auto;
+  font-size: 11px;
+  color: var(--ink-faint);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  padding: 4px 9px;
+  border-radius: 999px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.song .ext:hover { color: var(--accent); border-color: var(--accent); }
+.player {
+  margin-top: 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+}
+.player iframe { width: 100%; height: 100%; border: 0; display: block; }
+.player-note {
+  font-size: 11px;
+  color: var(--ink-faint);
+  margin: 6px 2px 0;
+  line-height: 1.6;
+}
+
+/* era modal specific */
+.float.era .fbody p { font-size: 15px; line-height: 2; }
+
+/* close button */
+.fclose {
+  position: absolute;
+  top: 16px; right: 16px;
+  z-index: 2;
+  width: 38px; height: 38px;
+  border-radius: 12px;
+  border: 1px solid var(--glass-brd);
+  background: rgba(10, 12, 24, 0.6);
+  color: var(--ink);
+  font-size: 18px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+.fclose:hover { background: rgba(60, 30, 40, 0.7); }
+.fclose:active { transform: scale(0.9); }
+
+/* intro overlay */
+#intro {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 24px;
+  background: radial-gradient(80vw 80vh at 50% 40%, rgba(20,30,55,0.6), var(--bg-0) 75%);
+  transition: opacity 0.9s ease;
+}
+#intro .inner { max-width: 620px; }
+#intro .eyebrow {
+  font-size: 12px; letter-spacing: 0.4em; color: var(--accent);
+  margin-bottom: 18px;
+}
+#intro h1 {
+  font-family: var(--serif);
+  font-size: clamp(30px, 7vw, 60px);
+  margin: 0 0 8px;
+  line-height: 1.1;
+  background: linear-gradient(120deg, #eaf7ff, #b6a8ff 45%, #7fe3d0 85%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+#intro p {
+  color: var(--ink-dim);
+  font-size: 15px; line-height: 1.9;
+  margin: 18px auto 30px;
+  max-width: 520px;
+}
+#intro button {
+  font-family: var(--font);
+  font-size: 15px;
+  color: var(--ink);
+  padding: 14px 34px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-brd);
+  background: rgba(127, 227, 208, 0.12);
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  transition: background 0.25s ease, transform 0.1s ease, box-shadow 0.25s ease;
+}
+#intro button:hover {
+  background: rgba(127, 227, 208, 0.24);
+  box-shadow: 0 0 40px rgba(127, 227, 208, 0.25);
+}
+#intro button:active { transform: scale(0.96); }
+#intro.hidden { opacity: 0; pointer-events: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora, .node .halo.breathe { animation: none !important; }
+  * { transition-duration: 0.01ms !important; }
+}
