@@ -71,11 +71,11 @@ const GENRES = [
     era: "1900年代初頭に南部で成立し、1940〜50年代のシカゴで電化。ロックンロールの直接の親となった。",
     artists: [
       { name: "Robert Johnson", note: "デルタ・ブルースの伝説。27歳で夭折し、後のロック全てに影を落とす。",
-        songs: [{ t: "Cross Road Blues", q: "Robert Johnson Cross Road Blues" }, { t: "Sweet Home Chicago", q: "Robert Johnson Sweet Home Chicago" }] },
+        songs: [{ t: "Cross Road Blues", q: "Robert Johnson Cross Road Blues", sp: "1TrGdXSgiBm8W68D2K1COG" }, { t: "Sweet Home Chicago", q: "Robert Johnson Sweet Home Chicago", sp: "3zf9b2FixBUBrfNUpdi1ML" }] },
       { name: "Muddy Waters", note: "デルタを電化しシカゴ・ブルースを確立。『ローリング・ストーンズ』の名の由来。",
-        songs: [{ t: "Rollin' Stone", q: "Muddy Waters Rollin Stone" }, { t: "Hoochie Coochie Man", q: "Muddy Waters Hoochie Coochie Man" }] },
+        songs: [{ t: "Rollin' Stone", q: "Muddy Waters Rollin Stone", sp: "61K6lqGyrl2Aerk0LjAZem" }, { t: "Hoochie Coochie Man", q: "Muddy Waters Hoochie Coochie Man", sp: "3KSchPNSklO5McIqRH3qYX" }] },
       { name: "B.B. King", note: "泣きのギター『ルシール』。ブルースを世界の大衆音楽へ橋渡しした。",
-        songs: [{ t: "The Thrill Is Gone", q: "B.B. King The Thrill Is Gone" }, { t: "Every Day I Have the Blues", q: "B.B. King Every Day I Have the Blues" }] },
+        songs: [{ t: "The Thrill Is Gone", q: "B.B. King The Thrill Is Gone", sp: "4NQfrmGs9iQXVQI9IpRhjM" }, { t: "Every Day I Have the Blues", q: "B.B. King Every Day I Have the Blues", sp: "6MrLjEmXy9IAPAX1mAKySE" }] },
     ],
   },
   {
@@ -95,9 +95,9 @@ const GENRES = [
     era: "1940〜50年代に隆盛。ロックンロールへ直接流れ込み、同時に後のソウル/ファンクの母体にもなった。",
     artists: [
       { name: "Little Richard", note: "『ロックの建築家』。叫びとピアノの乱打で、聖と俗の境界を破壊した。",
-        songs: [{ t: "Tutti Frutti", q: "Little Richard Tutti Frutti" }, { t: "Long Tall Sally", q: "Little Richard Long Tall Sally" }] },
+        songs: [{ t: "Tutti Frutti", q: "Little Richard Tutti Frutti", sp: "2iXcvnD3d1gfLBum0cE5Eg" }, { t: "Long Tall Sally", q: "Little Richard Long Tall Sally", sp: "28iKx3wpnJSNvQONt0HQrt" }] },
       { name: "Ray Charles", note: "ゴスペルとブルースを融合し『ソウル』を発明した天才。",
-        songs: [{ t: "What'd I Say", q: "Ray Charles What'd I Say" }, { t: "I Got a Woman", q: "Ray Charles I Got a Woman" }] },
+        songs: [{ t: "What'd I Say", q: "Ray Charles What'd I Say", sp: "6h4rAPuTPv0iAI1NaF2SRL" }, { t: "I Got a Woman", q: "Ray Charles I Got a Woman", sp: "2xar08Fq5xra2KKZs5Bw9j" }] },
     ],
   },
   {
@@ -117,9 +117,9 @@ const GENRES = [
     era: "1920年代に録音文化が始まり、戦後に全国化。ロカビリーを介してロックンロールに、フォークは60年代フォーク・ロックへ流れ込む。",
     artists: [
       { name: "Hank Williams", note: "カントリーの魂。孤独と信仰を歌い29歳で死去、後世に神話を残す。",
-        songs: [{ t: "I'm So Lonesome I Could Cry", q: "Hank Williams I'm So Lonesome I Could Cry" }, { t: "Your Cheatin' Heart", q: "Hank Williams Your Cheatin Heart" }] },
+        songs: [{ t: "I'm So Lonesome I Could Cry", q: "Hank Williams I'm So Lonesome I Could Cry", sp: "4tj7IsJrn4MvesuhoY0JBy" }, { t: "Your Cheatin' Heart", q: "Hank Williams Your Cheatin Heart", sp: "4gGKgDtkpytZtYFsUhY6SA" }] },
       { name: "Woody Guthrie", note: "『このギターはファシストを殺す』。フォークを抵抗の武器にした父。",
-        songs: [{ t: "This Land Is Your Land", q: "Woody Guthrie This Land Is Your Land" }] },
+        songs: [{ t: "This Land Is Your Land", q: "Woody Guthrie This Land Is Your Land", sp: "3ZjrfGcb3A2PMGA1vRNgSk" }] },
     ],
   },
 
@@ -141,11 +141,11 @@ const GENRES = [
     era: "1954年前後に爆発。だが50年代末には主要人物が兵役・事故・スキャンダルで次々退場し、60年代初頭に一度沈静化する。",
     artists: [
       { name: "Chuck Berry", note: "ロックンロールの詩人にして建築家。ギターリフと若者賛歌の文法を作った。",
-        songs: [{ t: "Johnny B. Goode", q: "Chuck Berry Johnny B Goode" }, { t: "Roll Over Beethoven", q: "Chuck Berry Roll Over Beethoven" }] },
+        songs: [{ t: "Johnny B. Goode", q: "Chuck Berry Johnny B Goode", sp: "2QfiRTz5Yc8DdShCxG1tB2" }, { t: "Roll Over Beethoven", q: "Chuck Berry Roll Over Beethoven", sp: "6C7aTTCUWRK7dD379yUT3W" }] },
       { name: "Elvis Presley", note: "『キング』。黒人音楽を白人の身体で大衆化し、光と影の両方を象徴する。",
-        songs: [{ t: "Jailhouse Rock", q: "Elvis Presley Jailhouse Rock" }, { t: "Hound Dog", q: "Elvis Presley Hound Dog" }] },
+        songs: [{ t: "Jailhouse Rock", q: "Elvis Presley Jailhouse Rock", sp: "4gphxUgq0JSFv2BCLhNDiE" }, { t: "Hound Dog", q: "Elvis Presley Hound Dog", sp: "64Ny7djQ6rNJspquof2KoX" }] },
       { name: "Bo Diddley", note: "『ボ・ディドリー・ビート』という永遠のリズムを刻印した革新者。",
-        songs: [{ t: "Bo Diddley", q: "Bo Diddley Bo Diddley" }, { t: "Who Do You Love?", q: "Bo Diddley Who Do You Love" }] },
+        songs: [{ t: "Bo Diddley", q: "Bo Diddley Bo Diddley", sp: "2R7uUQ0Dehu80gsOcydQC9" }, { t: "Who Do You Love?", q: "Bo Diddley Who Do You Love", sp: "0FeFR2V5TcqS0GcL8qwvxr" }] },
     ],
   },
 
@@ -167,9 +167,9 @@ const GENRES = [
     era: "1961〜65年に西海岸で流行。ブリティッシュ・インヴェイジョンに市場を奪われ短命に終わるが、後のパンクやインディーが繰り返し参照する。",
     artists: [
       { name: "The Beach Boys", note: "ブライアン・ウィルソンの和声実験は『ペット・サウンズ』でポップの限界を押し広げた。",
-        songs: [{ t: "Good Vibrations", q: "The Beach Boys Good Vibrations" }, { t: "Wouldn't It Be Nice", q: "The Beach Boys Wouldn't It Be Nice" }] },
+        songs: [{ t: "Good Vibrations", q: "The Beach Boys Good Vibrations", sp: "7tf64lNC31lWlTsih0nfZf" }, { t: "Wouldn't It Be Nice", q: "The Beach Boys Wouldn't It Be Nice", sp: "6VojZJpMyuKClbwyilWlQj" }] },
       { name: "Dick Dale", note: "『サーフ・ギターの王』。速弾きとリバーブで波の轟音を表現した。",
-        songs: [{ t: "Misirlou", q: "Dick Dale Misirlou" }] },
+        songs: [{ t: "Misirlou", q: "Dick Dale Misirlou", sp: "3OnCnEWgy79xR5pr2kv4TX" }] },
     ],
   },
   {
@@ -189,9 +189,9 @@ const GENRES = [
     era: "1964年のビートルズ米国上陸で爆発。60年代後半にはサイケデリアへと各バンドが変貌していく。",
     artists: [
       { name: "The Beatles", note: "ポップを芸術に変えた最重要バンド。約7年で音楽の可能性を丸ごと書き換えた。",
-        songs: [{ t: "A Hard Day's Night", q: "The Beatles A Hard Day's Night" }, { t: "Ticket to Ride", q: "The Beatles Ticket to Ride" }] },
+        songs: [{ t: "A Hard Day's Night", q: "The Beatles A Hard Day's Night", sp: "4i8BNcagbah58BrHjnsKdN" }, { t: "Ticket to Ride", q: "The Beatles Ticket to Ride", sp: "7CZiDzGVjUssMSOXrDNYHL" }] },
       { name: "The Kinks", note: "歪んだギターリフ(『You Really Got Me』)はハードロックとパンク双方の祖型。",
-        songs: [{ t: "You Really Got Me", q: "The Kinks You Really Got Me" }, { t: "Waterloo Sunset", q: "The Kinks Waterloo Sunset" }] },
+        songs: [{ t: "You Really Got Me", q: "The Kinks You Really Got Me", sp: "6tZdL3Zp8JgrfDbsSeSV1S" }, { t: "Waterloo Sunset", q: "The Kinks Waterloo Sunset", sp: "4qSk2aeaE2dh5ZOP0JdaV3" }] },
     ],
   },
   {
@@ -211,9 +211,9 @@ const GENRES = [
     era: "1965〜68年に隆盛。サイケデリアやカントリー・ロック、そして後のシンガーソングライター文化へ枝分かれする。",
     artists: [
       { name: "Bob Dylan", note: "ロックに『言葉』の革命を持ち込んだ。ノーベル文学賞受賞。",
-        songs: [{ t: "Like a Rolling Stone", q: "Bob Dylan Like a Rolling Stone" }, { t: "The Times They Are a-Changin'", q: "Bob Dylan The Times They Are a-Changin" }] },
+        songs: [{ t: "Like a Rolling Stone", q: "Bob Dylan Like a Rolling Stone", sp: "3AhXZa8sUQht0UEdBJgpGc" }, { t: "The Times They Are a-Changin'", q: "Bob Dylan The Times They Are a-Changin", sp: "52vA3CYKZqZVdQnzRrdZt6" }] },
       { name: "The Byrds", note: "リッケンバッカー12弦の煌めきでフォーク・ロックの音を定義した。",
-        songs: [{ t: "Mr. Tambourine Man", q: "The Byrds Mr Tambourine Man" }, { t: "Turn! Turn! Turn!", q: "The Byrds Turn Turn Turn" }] },
+        songs: [{ t: "Mr. Tambourine Man", q: "The Byrds Mr Tambourine Man", sp: "2HCaIYjkvWSZzaSKUoOh3d" }, { t: "Turn! Turn! Turn!", q: "The Byrds Turn Turn Turn", sp: "6gXvSIpr8NJykVdczO82J7" }] },
     ],
   },
   {
@@ -233,9 +233,9 @@ const GENRES = [
     era: "1964〜68年に無数に現れ消えた。プロト・パンク(ストゥージズ/MC5)を経て、70年代パンクへ精神を受け渡す。",
     artists: [
       { name: "The Sonics", note: "60年代とは思えない過激な歪みと絶叫。パンクの遥かな先駆。",
-        songs: [{ t: "Psycho", q: "The Sonics Psycho" }, { t: "Have Love Will Travel", q: "The Sonics Have Love Will Travel" }] },
+        songs: [{ t: "Psycho", q: "The Sonics Psycho", sp: "77DvhwGhnmfrXWwiJzeIMC" }, { t: "Have Love Will Travel", q: "The Sonics Have Love Will Travel", sp: "2uXkW8uJcOIhlbUatEPLPs" }] },
       { name: "The Stooges", note: "イギー・ポップの自己破壊的なパフォーマンス。プロト・パンクの核。",
-        songs: [{ t: "I Wanna Be Your Dog", q: "The Stooges I Wanna Be Your Dog" }, { t: "Search and Destroy", q: "The Stooges Search and Destroy" }] },
+        songs: [{ t: "I Wanna Be Your Dog", q: "The Stooges I Wanna Be Your Dog", sp: "672N8DGGTOLCOgWe0koX5g" }, { t: "Search and Destroy", q: "The Stooges Search and Destroy", sp: "7bebHZwpRnV1r2CDsuApgD" }] },
     ],
   },
   {
@@ -255,11 +255,11 @@ const GENRES = [
     era: "1966〜72年に隆盛。ハードロック/メタル、サザン・ロック、ジャム・バンドへ枝分かれしていく。",
     artists: [
       { name: "The Jimi Hendrix Experience", note: "ギターの概念を破壊し再創造した革命家。全ての後続ギタリストの原点。",
-        songs: [{ t: "Voodoo Child (Slight Return)", q: "Jimi Hendrix Voodoo Child Slight Return" }, { t: "Purple Haze", q: "Jimi Hendrix Purple Haze" }] },
+        songs: [{ t: "Voodoo Child (Slight Return)", q: "Jimi Hendrix Voodoo Child Slight Return", sp: "2AxCeJ6PSsBYiTckM0HLY7" }, { t: "Purple Haze", q: "Jimi Hendrix Purple Haze", sp: "0wJoRiX5K5BxlqZTolB2LD" }] },
       { name: "Cream", note: "クラプトンらによる史上初の『スーパーグループ』。長尺の即興演奏を確立。",
-        songs: [{ t: "Sunshine of Your Love", q: "Cream Sunshine of Your Love" }, { t: "White Room", q: "Cream White Room" }] },
+        songs: [{ t: "Sunshine of Your Love", q: "Cream Sunshine of Your Love", sp: "2K2M0TcglCRLLpFOzKeFZA" }, { t: "White Room", q: "Cream White Room", sp: "3Xls4cNOwy01dtrNXb1inG" }] },
       { name: "The Rolling Stones", note: "ブルースへの偏愛を核に、60年以上走り続ける『世界最高のロックンロール・バンド』。",
-        songs: [{ t: "(I Can't Get No) Satisfaction", q: "The Rolling Stones Satisfaction" }, { t: "Gimme Shelter", q: "The Rolling Stones Gimme Shelter" }] },
+        songs: [{ t: "(I Can't Get No) Satisfaction", q: "The Rolling Stones Satisfaction", sp: "2PzU4IB8Dr6mxV3lHuaG34" }, { t: "Gimme Shelter", q: "The Rolling Stones Gimme Shelter", sp: "6H3kDe7CGoWYBabAeVWGiD" }] },
     ],
   },
   {
@@ -279,11 +279,11 @@ const GENRES = [
     era: "1966〜70年に頂点。ウッドストックで理想を掲げ、オルタモントの悲劇とドラッグ禍で急速に色褪せる。プログレ/ハードロック/クラウトロックへ分化。",
     artists: [
       { name: "Pink Floyd", note: "宇宙的スケールの音響実験。後にプログレの頂点へと進化する。",
-        songs: [{ t: "Interstellar Overdrive", q: "Pink Floyd Interstellar Overdrive" }, { t: "See Emily Play", q: "Pink Floyd See Emily Play" }] },
+        songs: [{ t: "Interstellar Overdrive", q: "Pink Floyd Interstellar Overdrive", sp: "3xyTufSSGLP3oZnomceAVW" }, { t: "See Emily Play", q: "Pink Floyd See Emily Play", sp: "1YZuigG1YcdgbfD7XJoCU5" }] },
       { name: "The Doors", note: "ジム・モリソンの詩的・呪術的なカリスマ。暗い官能とオルガンの音。",
-        songs: [{ t: "Light My Fire", q: "The Doors Light My Fire" }, { t: "Break On Through", q: "The Doors Break On Through" }] },
+        songs: [{ t: "Light My Fire", q: "The Doors Light My Fire", sp: "5uvosCdMlFdTXhoazkTI5R" }, { t: "Break On Through", q: "The Doors Break On Through", sp: "6OH7N2Q8SRVU3bCIVkoI6i" }] },
       { name: "Jefferson Airplane", note: "サンフランシスコ・サウンドの旗手。グレイス・スリックの声が幻覚を歌う。",
-        songs: [{ t: "White Rabbit", q: "Jefferson Airplane White Rabbit" }, { t: "Somebody to Love", q: "Jefferson Airplane Somebody to Love" }] },
+        songs: [{ t: "White Rabbit", q: "Jefferson Airplane White Rabbit", sp: "4vpeKl0vMGdAXpZiQB2Dtd" }, { t: "Somebody to Love", q: "Jefferson Airplane Somebody to Love", sp: "4uGIJG1jYFonGc4LGp5uQL" }] },
     ],
   },
 
@@ -305,11 +305,11 @@ const GENRES = [
     era: "1969年前後に確立し70年代を支配。パンクに『恐竜』と揶揄されるが、80年代のグラムメタルへ命脈をつなぐ。",
     artists: [
       { name: "Led Zeppelin", note: "重さ・神秘・ブルースを融合した究極のロックバンド。以後の全ハードロックの基準。",
-        songs: [{ t: "Whole Lotta Love", q: "Led Zeppelin Whole Lotta Love" }, { t: "Immigrant Song", q: "Led Zeppelin Immigrant Song" }] },
+        songs: [{ t: "Whole Lotta Love", q: "Led Zeppelin Whole Lotta Love", sp: "0hCB0YR03f6AmQaHbwWDe8" }, { t: "Immigrant Song", q: "Led Zeppelin Immigrant Song", sp: "78lgmZwycJ3nzsdgmPPGNx" }] },
       { name: "Deep Purple", note: "オルガンとギターの対決、様式美と速さでハードロックを様式化。",
-        songs: [{ t: "Smoke on the Water", q: "Deep Purple Smoke on the Water" }, { t: "Highway Star", q: "Deep Purple Highway Star" }] },
+        songs: [{ t: "Smoke on the Water", q: "Deep Purple Smoke on the Water", sp: "5SAUIWdZ04OxYfJFDchC7S" }, { t: "Highway Star", q: "Deep Purple Highway Star", sp: "4gVTozEmzwAUXpwj3jEetX" }] },
       { name: "AC/DC", note: "余計なものを全て削ぎ落とした、純粋なロックンロールの権化。",
-        songs: [{ t: "Back in Black", q: "AC/DC Back in Black" }, { t: "Highway to Hell", q: "AC/DC Highway to Hell" }] },
+        songs: [{ t: "Back in Black", q: "AC/DC Back in Black", sp: "08mG3Y1vljYA6bvDt4Wqkj" }, { t: "Highway to Hell", q: "AC/DC Highway to Hell", sp: "2zYzyRzz6pRmhPzyfMEC8s" }] },
     ],
   },
   {
@@ -329,11 +329,11 @@ const GENRES = [
     era: "1969〜77年に隆盛。パンクの登場で『時代遅れ』の烙印を押されるが、様式はメタルやポストロックへ受け継がれる。",
     artists: [
       { name: "King Crimson", note: "『クリムゾン・キングの宮殿』でプログレの扉を開いた。緊張と即興の巨人。",
-        songs: [{ t: "21st Century Schizoid Man", q: "King Crimson 21st Century Schizoid Man" }, { t: "The Court of the Crimson King", q: "King Crimson The Court of the Crimson King" }] },
+        songs: [{ t: "21st Century Schizoid Man", q: "King Crimson 21st Century Schizoid Man", sp: "5yClziwiwTdqRmdPQl3NDz" }, { t: "The Court of the Crimson King", q: "King Crimson The Court of the Crimson King", sp: "1OFjv0Cq2JeK3FPvPG98rJ" }] },
       { name: "Yes", note: "多層的なコーラスと超絶技巧による構築美の極致。",
-        songs: [{ t: "Roundabout", q: "Yes Roundabout" }, { t: "Owner of a Lonely Heart", q: "Yes Owner of a Lonely Heart" }] },
+        songs: [{ t: "Roundabout", q: "Yes Roundabout", sp: "7lPjS6Yd4lRk4BsboDsm1H" }, { t: "Owner of a Lonely Heart", q: "Yes Owner of a Lonely Heart", sp: "0GTK6TesV108Jj5D3MHsYb" }] },
       { name: "Pink Floyd", note: "サイケから進化し、『狂気』で内省的コンセプト・アルバムを完成させた。",
-        songs: [{ t: "Money", q: "Pink Floyd Money" }, { t: "Time", q: "Pink Floyd Time" }] },
+        songs: [{ t: "Money", q: "Pink Floyd Money", sp: "61rfQ3Kqj4NeYCCJHNt7qj" }, { t: "Time", q: "Pink Floyd Time", sp: "3TO7bbrUKrOSPGRTB5MeCz" }] },
     ],
   },
   {
@@ -353,9 +353,9 @@ const GENRES = [
     era: "1971〜75年に英国で隆盛。パンクとニューウェイヴ、そしてグラムメタルへ美学を受け渡す。",
     artists: [
       { name: "David Bowie", note: "変身を繰り返す『カメレオン』。ロックに演劇性と知性を注いだ20世紀の巨人。",
-        songs: [{ t: "Ziggy Stardust", q: "David Bowie Ziggy Stardust" }, { t: "Starman", q: "David Bowie Starman" }] },
+        songs: [{ t: "Ziggy Stardust", q: "David Bowie Ziggy Stardust", sp: "0NwGSYFvpiQ0ydLY3jRWSA" }, { t: "Starman", q: "David Bowie Starman", sp: "43XNrgulBg9wQA7vJiJRHM" }] },
       { name: "T. Rex", note: "マーク・ボランのブギーとグリッター。英国グラムの火付け役。",
-        songs: [{ t: "Get It On", q: "T. Rex Get It On" }, { t: "20th Century Boy", q: "T. Rex 20th Century Boy" }] },
+        songs: [{ t: "Get It On", q: "T. Rex Get It On", sp: "6bDDM0rFFnGaUD47T4kpcO" }, { t: "20th Century Boy", q: "T. Rex 20th Century Boy", sp: "6Soku1wiB6mfcQp2s2W6a6" }] },
     ],
   },
   {
@@ -375,9 +375,9 @@ const GENRES = [
     era: "1970年代前半に隆盛。デヴィッド・ボウイのベルリン三部作を経て、ニューウェイヴ/インダストリアル/テクノへ絶大な影響を残す。",
     artists: [
       { name: "Can", note: "即興と編集で作る反復の魔術。ポストパンク以降が繰り返し掘り起こす源泉。",
-        songs: [{ t: "Vitamin C", q: "Can Vitamin C" }, { t: "Halleluhwah", q: "Can Halleluhwah" }] },
+        songs: [{ t: "Vitamin C", q: "Can Vitamin C", sp: "4zdsBics0asw0gj4L5wu5v" }, { t: "Halleluhwah", q: "Can Halleluhwah", sp: "4tdEmE39Z4OKqTaP7lwQ3u" }] },
       { name: "Neu!", note: "モトリック・ビートを純化。以後のあらゆる反復音楽の設計図。",
-        songs: [{ t: "Hallogallo", q: "Neu! Hallogallo" }] },
+        songs: [{ t: "Hallogallo", q: "Neu! Hallogallo", sp: "1GkZZHT9uJjdzrrksrpczR" }] },
     ],
   },
   {
@@ -397,11 +397,11 @@ const GENRES = [
     era: "1976〜79年に爆発し、既存のロックを一掃した。すぐにポストパンク/ハードコア/ニューウェイヴへ多様に分裂する。",
     artists: [
       { name: "Ramones", note: "全曲2分・高速3コード。パンクの設計図そのものを作ったNYの兄弟分。",
-        songs: [{ t: "Blitzkrieg Bop", q: "Ramones Blitzkrieg Bop" }, { t: "Judy Is a Punk", q: "Ramones Judy Is a Punk" }] },
+        songs: [{ t: "Blitzkrieg Bop", q: "Ramones Blitzkrieg Bop", sp: "7sYW1cE2sjVFMRVV73R8TA" }, { t: "Judy Is a Punk", q: "Ramones Judy Is a Punk", sp: "2OVGtm7PQ4uu7YN5BKLzEk" }] },
       { name: "Sex Pistols", note: "『No Future』。英国社会への挑発で、パンクを世界的事件に変えた。",
-        songs: [{ t: "Anarchy in the U.K.", q: "Sex Pistols Anarchy in the UK" }, { t: "God Save the Queen", q: "Sex Pistols God Save the Queen" }] },
+        songs: [{ t: "Anarchy in the U.K.", q: "Sex Pistols Anarchy in the UK", sp: "5moTxUGPZXgGmosl4rIELm" }, { t: "God Save the Queen", q: "Sex Pistols God Save the Queen", sp: "6ui6l3ZNvlrGQZArwo8195" }] },
       { name: "The Clash", note: "レゲエやファンクを取り込み、パンクに知性と射程を与えた『唯一無二のバンド』。",
-        songs: [{ t: "London Calling", q: "The Clash London Calling" }, { t: "Should I Stay or Should I Go", q: "The Clash Should I Stay or Should I Go" }] },
+        songs: [{ t: "London Calling", q: "The Clash London Calling", sp: "124Y9LPRCAz3q2OP0iCvcJ" }, { t: "Should I Stay or Should I Go", q: "The Clash Should I Stay or Should I Go", sp: "0M4MUFxufVAmuauXvuULbs" }] },
     ],
   },
   {
@@ -421,9 +421,9 @@ const GENRES = [
     era: "1970年に萌芽、70年代末のNWOBHMで再点火。80年代以降、スラッシュ/デス/ブラック/パワー等へ無限に枝分かれする。",
     artists: [
       { name: "Black Sabbath", note: "重さ・暗さ・不吉さを発明したヘヴィメタルの真の始祖。",
-        songs: [{ t: "Paranoid", q: "Black Sabbath Paranoid" }, { t: "Iron Man", q: "Black Sabbath Iron Man" }] },
+        songs: [{ t: "Paranoid", q: "Black Sabbath Paranoid", sp: "3L8WgDYS5TtwbyxOPSAiFf" }, { t: "Iron Man", q: "Black Sabbath Iron Man", sp: "4svkPL62HbvyFgf0nHFXAF" }] },
       { name: "Judas Priest", note: "ブルースを排し、革と鋲のヴィジュアルとツインギターでメタルを様式化。",
-        songs: [{ t: "Breaking the Law", q: "Judas Priest Breaking the Law" }, { t: "Painkiller", q: "Judas Priest Painkiller" }] },
+        songs: [{ t: "Breaking the Law", q: "Judas Priest Breaking the Law", sp: "2RaA6kIcvomt77qlIgGhCT" }, { t: "Painkiller", q: "Judas Priest Painkiller", sp: "0L7zm6afBEtrNKo6C6Gj08" }] },
     ],
   },
 
@@ -445,11 +445,11 @@ const GENRES = [
     era: "1978〜84年に隆盛。ゴシック/ニューウェイヴ/インダストリアル、そして90年代以降のオルタナ全般の設計図になった。",
     artists: [
       { name: "Joy Division", note: "イアン・カーティスの絶望を刻んだ、暗く広大な音響。ポストパンクの魂。",
-        songs: [{ t: "Love Will Tear Us Apart", q: "Joy Division Love Will Tear Us Apart" }, { t: "Disorder", q: "Joy Division Disorder" }] },
+        songs: [{ t: "Love Will Tear Us Apart", q: "Joy Division Love Will Tear Us Apart", sp: "2JO3HwMRPeya8bXbtbyPcf" }, { t: "Disorder", q: "Joy Division Disorder", sp: "2WEw8oFZiANQzWdGElO3Mf" }] },
       { name: "Gang of Four", note: "ファンクのグルーヴと political な鋭さ。踊れる知性の原型。",
-        songs: [{ t: "Damaged Goods", q: "Gang of Four Damaged Goods" }, { t: "At Home He's a Tourist", q: "Gang of Four At Home He's a Tourist" }] },
+        songs: [{ t: "Damaged Goods", q: "Gang of Four Damaged Goods", sp: "62uw0iWu8jLB4cYBQxjdcm" }, { t: "At Home He's a Tourist", q: "Gang of Four At Home He's a Tourist", sp: "1fpSdqEoXJBEr4HGQhWcxP" }] },
       { name: "Wire", note: "パンクを最短で解体し再構築した、簡潔で前衛的な発明家たち。",
-        songs: [{ t: "Ex Lion Tamer", q: "Wire Ex Lion Tamer" }, { t: "Outdoor Miner", q: "Wire Outdoor Miner" }] },
+        songs: [{ t: "Ex Lion Tamer", q: "Wire Ex Lion Tamer", sp: "6JK4rRp3HbsfgjKdVvMF2c" }, { t: "Outdoor Miner", q: "Wire Outdoor Miner", sp: "4G7OQA5GNOKGlCQhTCBgDm" }] },
     ],
   },
   {
@@ -469,9 +469,9 @@ const GENRES = [
     era: "1978〜85年に隆盛。MTVの主役となり、シンセポップやオルタナ・ポップへ流れ込む。",
     artists: [
       { name: "Talking Heads", note: "アフロ・ファンクと知性を融合した、ニューウェイヴ最高の頭脳。",
-        songs: [{ t: "Once in a Lifetime", q: "Talking Heads Once in a Lifetime" }, { t: "Psycho Killer", q: "Talking Heads Psycho Killer" }] },
+        songs: [{ t: "Once in a Lifetime", q: "Talking Heads Once in a Lifetime", sp: "1XRPhfz1e4g203fCrjztLp" }, { t: "Psycho Killer", q: "Talking Heads Psycho Killer", sp: "7dSCxR4LqkmxoBrq9MzVSD" }] },
       { name: "Blondie", note: "パンク、ディスコ、ラップを飲み込んだNYの女王。",
-        songs: [{ t: "Heart of Glass", q: "Blondie Heart of Glass" }, { t: "Call Me", q: "Blondie Call Me" }] },
+        songs: [{ t: "Heart of Glass", q: "Blondie Heart of Glass", sp: "4v2rkl1mC3zVAz0nXMx9r4" }, { t: "Call Me", q: "Blondie Call Me", sp: "7HKxTNVlkHsfMLhigmhC0I" }] },
     ],
   },
   {
@@ -491,9 +491,9 @@ const GENRES = [
     era: "1980〜86年に米国各地で隆盛。スラッシュメタル、グランジ、エモ、メタルコアなど後続の多くを準備した。",
     artists: [
       { name: "Black Flag", note: "米国西海岸ハードコアの中心。DIYツアーで地下ネットワークを築いた。",
-        songs: [{ t: "Rise Above", q: "Black Flag Rise Above" }, { t: "Nervous Breakdown", q: "Black Flag Nervous Breakdown" }] },
+        songs: [{ t: "Rise Above", q: "Black Flag Rise Above", sp: "4kFfFe38CRVnTsakUTL4E4" }, { t: "Nervous Breakdown", q: "Black Flag Nervous Breakdown", sp: "3NoOwvxhI2yMYknxqnFUVx" }] },
       { name: "Minor Threat", note: "ストレート・エッジの発明者。純粋主義的な怒りと倫理の象徴。",
-        songs: [{ t: "Straight Edge", q: "Minor Threat Straight Edge" }, { t: "Minor Threat", q: "Minor Threat Minor Threat song" }] },
+        songs: [{ t: "Straight Edge", q: "Minor Threat Straight Edge", sp: "3Iw6tbCYDYb3libUo3bB5S" }, { t: "Minor Threat", q: "Minor Threat Minor Threat song", sp: "6yIaRcvzhIrukxS4VVhil0" }] },
     ],
   },
   {
@@ -513,9 +513,9 @@ const GENRES = [
     era: "1979〜83年に英国で隆盛。米国の若者に飛び火し、スラッシュメタル爆発の直接の引き金になった。",
     artists: [
       { name: "Iron Maiden", note: "ツインリードと叙事詩でメタルの新基準を作り、今も世界を席巻する。",
-        songs: [{ t: "The Trooper", q: "Iron Maiden The Trooper" }, { t: "Run to the Hills", q: "Iron Maiden Run to the Hills" }] },
+        songs: [{ t: "The Trooper", q: "Iron Maiden The Trooper", sp: "2WeSz9FLWE9RRIFDWtD5nc" }, { t: "Run to the Hills", q: "Iron Maiden Run to the Hills", sp: "44AxeBXrK9LQlGjXyT2oZQ" }] },
       { name: "Motörhead", note: "パンクとメタルの境界を消し去った、爆音とスピードの権化。",
-        songs: [{ t: "Ace of Spades", q: "Motörhead Ace of Spades" }] },
+        songs: [{ t: "Ace of Spades", q: "Motörhead Ace of Spades", sp: "6EPRKhUOdiFSQwGBRBbvsZ" }] },
     ],
   },
   {
@@ -535,11 +535,11 @@ const GENRES = [
     era: "1981〜89年に隆盛。以後もサブカルチャーとして生き続け、インダストリアルやメタルにも美学を供給した。",
     artists: [
       { name: "Bauhaus", note: "『Bela Lugosi's Dead』でゴシックの美学を発明した始祖。",
-        songs: [{ t: "Bela Lugosi's Dead", q: "Bauhaus Bela Lugosi's Dead" }] },
+        songs: [{ t: "Bela Lugosi's Dead", q: "Bauhaus Bela Lugosi's Dead", sp: "5EhI8pJIJzUDnTlCLr3kL9" }] },
       { name: "The Cure", note: "憂鬱と多幸感を往復する、ゴスを超えて愛される永遠のアウトサイダー。",
-        songs: [{ t: "A Forest", q: "The Cure A Forest" }, { t: "Just Like Heaven", q: "The Cure Just Like Heaven" }] },
+        songs: [{ t: "A Forest", q: "The Cure A Forest", sp: "0o4S13NJiEdnzy67ZKoyFZ" }, { t: "Just Like Heaven", q: "The Cure Just Like Heaven", sp: "76GlO5H5RT6g7y0gev86Nk" }] },
       { name: "Siouxsie and the Banshees", note: "氷のような気高さでポストパンクとゴスを繋いだ女王。",
-        songs: [{ t: "Spellbound", q: "Siouxsie and the Banshees Spellbound" }, { t: "Cities in Dust", q: "Siouxsie and the Banshees Cities in Dust" }] },
+        songs: [{ t: "Spellbound", q: "Siouxsie and the Banshees Spellbound", sp: "5Ng6UbryNd3eds2zQk9MUf" }, { t: "Cities in Dust", q: "Siouxsie and the Banshees Cities in Dust", sp: "2xq9cLlOPyLoi8kLlR4miz" }] },
     ],
   },
   {
@@ -559,9 +559,9 @@ const GENRES = [
     era: "1980〜87年に隆盛。クラウトロックとディスコを土台に、後のエレクトロニカやシンセウェイヴへつながる。",
     artists: [
       { name: "Depeche Mode", note: "ポップから暗く官能的な巨大バンドへ変貌。シンセで『重さ』を表現した。",
-        songs: [{ t: "Enjoy the Silence", q: "Depeche Mode Enjoy the Silence" }, { t: "Personal Jesus", q: "Depeche Mode Personal Jesus" }] },
+        songs: [{ t: "Enjoy the Silence", q: "Depeche Mode Enjoy the Silence", sp: "6WK9dVrRABMkUXFLNlgWFh" }, { t: "Personal Jesus", q: "Depeche Mode Personal Jesus", sp: "2wUlYDGGXlSvm2NkGj0Qio" }] },
       { name: "New Order", note: "ジョイ・ディヴィジョンの残党が、悲しみをダンスフロアへ翻訳した。",
-        songs: [{ t: "Blue Monday", q: "New Order Blue Monday" }, { t: "Bizarre Love Triangle", q: "New Order Bizarre Love Triangle" }] },
+        songs: [{ t: "Blue Monday", q: "New Order Blue Monday", sp: "6hHc7Pks7wtBIW8Z6A0iFq" }, { t: "Bizarre Love Triangle", q: "New Order Bizarre Love Triangle", sp: "6wVViUl2xSRoDK2T7dMZbR" }] },
     ],
   },
   {
@@ -581,9 +581,9 @@ const GENRES = [
     era: "1983〜91年に地下で成熟。ニルヴァーナの成功で『オルタナ』が世界の主流となる瞬間へ向かう。",
     artists: [
       { name: "R.E.M.", note: "ジャングリーなギターと難解な歌詞で、地下から世界的バンドへ登り詰めた道標。",
-        songs: [{ t: "Losing My Religion", q: "R.E.M. Losing My Religion" }, { t: "The One I Love", q: "R.E.M. The One I Love" }] },
+        songs: [{ t: "Losing My Religion", q: "R.E.M. Losing My Religion", sp: "31AOj9sFz2gM0O3hMARRBx" }, { t: "The One I Love", q: "R.E.M. The One I Love", sp: "2fdfsGuqb6SBX5ocoBWHUd" }] },
       { name: "Pixies", note: "静と動を交互に爆発させる構造で、ニルヴァーナら次世代を決定づけた。",
-        songs: [{ t: "Where Is My Mind?", q: "Pixies Where Is My Mind" }, { t: "Debaser", q: "Pixies Debaser" }] },
+        songs: [{ t: "Where Is My Mind?", q: "Pixies Where Is My Mind", sp: "6mcxQ1Y3uQRU0IHsvdNLH1" }, { t: "Debaser", q: "Pixies Debaser", sp: "3FzKPS0oVknVlCW3PhxIHl" }] },
     ],
   },
   {
@@ -603,9 +603,9 @@ const GENRES = [
     era: "1983〜91年に隆盛。デスメタル/ブラックメタルなどエクストリーム・メタルの母胎となり、グルーヴメタルへも展開する。",
     artists: [
       { name: "Metallica", note: "スラッシュを世界的現象に押し上げ、メタルの歴史を書き換えた最大の存在。",
-        songs: [{ t: "Master of Puppets", q: "Metallica Master of Puppets" }, { t: "Enter Sandman", q: "Metallica Enter Sandman" }] },
+        songs: [{ t: "Master of Puppets", q: "Metallica Master of Puppets", sp: "2MuWTIM3b0YEAskbeeFE1i" }, { t: "Enter Sandman", q: "Metallica Enter Sandman", sp: "5BIMPccDwShpXq784RJlJp" }] },
       { name: "Slayer", note: "最も速く最も邪悪。エクストリーム・メタルの限界を押し広げた。",
-        songs: [{ t: "Raining Blood", q: "Slayer Raining Blood" }, { t: "Angel of Death", q: "Slayer Angel of Death" }] },
+        songs: [{ t: "Raining Blood", q: "Slayer Raining Blood", sp: "01Mpj13vURSO3cCLprPt5T" }, { t: "Angel of Death", q: "Slayer Angel of Death", sp: "61dTqhd46yMkSWmC5LAh5F" }] },
     ],
   },
   {
@@ -625,9 +625,9 @@ const GENRES = [
     era: "1983〜91年にMTVを席巻。1991年、ニルヴァーナの登場で一夜にして時代遅れとなった、と語られる。",
     artists: [
       { name: "Mötley Crüe", note: "退廃と享楽の権化。サンセット・ストリップのグラムメタルを象徴。",
-        songs: [{ t: "Kickstart My Heart", q: "Mötley Crüe Kickstart My Heart" }, { t: "Girls, Girls, Girls", q: "Mötley Crüe Girls Girls Girls" }] },
+        songs: [{ t: "Kickstart My Heart", q: "Mötley Crüe Kickstart My Heart", sp: "7GonnnalI2s19OCQO1J7Tf" }, { t: "Girls, Girls, Girls", q: "Mötley Crüe Girls Girls Girls", sp: "3439OLNIeD3y68kVuoZUO5" }] },
       { name: "Guns N' Roses", note: "グラムの享楽に危険な本物のロックンロールを注ぎ、時代の頂点に立った。",
-        songs: [{ t: "Sweet Child o' Mine", q: "Guns N' Roses Sweet Child o' Mine" }, { t: "Welcome to the Jungle", q: "Guns N' Roses Welcome to the Jungle" }] },
+        songs: [{ t: "Sweet Child o' Mine", q: "Guns N' Roses Sweet Child o' Mine", sp: "7snQQk1zcKl8gZ92AnueZW" }, { t: "Welcome to the Jungle", q: "Guns N' Roses Welcome to the Jungle", sp: "0G21yYKMZoHa30cYVi1iA8" }] },
     ],
   },
   {
@@ -647,9 +647,9 @@ const GENRES = [
     era: "1988〜99年に隆盛。メタルやエレクトロニカと交わり、後のニューメタルの一因子にもなった。",
     artists: [
       { name: "Nine Inch Nails", note: "トレント・レズナーの内面の痛みを、精緻なノイズの大作へ昇華した。",
-        songs: [{ t: "Closer", q: "Nine Inch Nails Closer" }, { t: "Head Like a Hole", q: "Nine Inch Nails Head Like a Hole" }] },
+        songs: [{ t: "Closer", q: "Nine Inch Nails Closer", sp: "2oDqmfa2g8W893LlwJG1qu" }, { t: "Head Like a Hole", q: "Nine Inch Nails Head Like a Hole", sp: "3ckd4YA4LcD3j50rfIVwUe" }] },
       { name: "Ministry", note: "スラッシュメタルの速度とサンプリングで、インダストリアルを暴力化した。",
-        songs: [{ t: "Jesus Built My Hotrod", q: "Ministry Jesus Built My Hotrod" }] },
+        songs: [{ t: "Jesus Built My Hotrod", q: "Ministry Jesus Built My Hotrod", sp: "0BX3ysoHJvxmLEhPMAfb2z" }] },
     ],
   },
 
@@ -671,11 +671,11 @@ const GENRES = [
     era: "1991年『ネヴァーマインド』の爆発でオルタナが世界の中心へ。94年のコバーンの死が、その熱狂に象徴的な終止符を打った。",
     artists: [
       { name: "Nirvana", note: "地下の価値観を世界の頂点へ運び、ロックの勢力図を一夜で塗り替えた。",
-        songs: [{ t: "Smells Like Teen Spirit", q: "Nirvana Smells Like Teen Spirit" }, { t: "Come as You Are", q: "Nirvana Come as You Are" }] },
+        songs: [{ t: "Smells Like Teen Spirit", q: "Nirvana Smells Like Teen Spirit", sp: "5ghIJDpPoe3CfHMGu71E6T" }, { t: "Come as You Are", q: "Nirvana Come as You Are", sp: "4P5KoWXOxwuobLmHXLMobV" }] },
       { name: "Pearl Jam", note: "クラシック・ロックの重厚さと誠実さで、グランジを長く生き延びさせた。",
-        songs: [{ t: "Alive", q: "Pearl Jam Alive" }, { t: "Even Flow", q: "Pearl Jam Even Flow" }] },
+        songs: [{ t: "Alive", q: "Pearl Jam Alive", sp: "1L94M3KIu7QluZe63g64rv" }, { t: "Even Flow", q: "Pearl Jam Even Flow", sp: "6QewNVIDKdSl8Y3ycuHIei" }] },
       { name: "Soundgarden", note: "サバス直系の重さと変拍子で、グランジに暗い荘厳さを与えた。",
-        songs: [{ t: "Black Hole Sun", q: "Soundgarden Black Hole Sun" }, { t: "Spoonman", q: "Soundgarden Spoonman" }] },
+        songs: [{ t: "Black Hole Sun", q: "Soundgarden Black Hole Sun", sp: "2EoOZnxNgtmZaD8uUmz2nD" }, { t: "Spoonman", q: "Soundgarden Spoonman", sp: "1jMaB19DiVR8OihLSuYFOt" }] },
     ],
   },
   {
@@ -695,9 +695,9 @@ const GENRES = [
     era: "1990〜95年に英国で隆盛。ブリットポップの登場で一度は忘れられるが、2000年代以降に世界中で再評価・再興した。",
     artists: [
       { name: "My Bloody Valentine", note: "『Loveless』は音の壁の到達点。以後の轟音ギター全ての基準点。",
-        songs: [{ t: "Only Shallow", q: "My Bloody Valentine Only Shallow" }, { t: "Soon", q: "My Bloody Valentine Soon" }] },
+        songs: [{ t: "Only Shallow", q: "My Bloody Valentine Only Shallow", sp: "52UcjsM15hjCQAUbTW2hy1" }, { t: "Soon", q: "My Bloody Valentine Soon", sp: "7ITRNB9OckYIp2SW2iXU8U" }] },
       { name: "Slowdive", note: "ノイズより静謐と美を志向し、シューゲイズの叙情面を極めた。",
-        songs: [{ t: "Alison", q: "Slowdive Alison" }, { t: "When the Sun Hits", q: "Slowdive When the Sun Hits" }] },
+        songs: [{ t: "Alison", q: "Slowdive Alison", sp: "33HRECrmuelZxOpid6XTNX" }, { t: "When the Sun Hits", q: "Slowdive When the Sun Hits", sp: "0oxYB9GoOIDrdzniNdKC44" }] },
     ],
   },
   {
@@ -717,9 +717,9 @@ const GENRES = [
     era: "1993〜99年に英国を席巻。過剰な期待とバンドの内紛、そして90年代末の失速とともに終息する。",
     artists: [
       { name: "Oasis", note: "労働者階級の傲慢さとアンセム。英国を熱狂させた最大のブリットポップ・バンド。",
-        songs: [{ t: "Wonderwall", q: "Oasis Wonderwall" }, { t: "Don't Look Back in Anger", q: "Oasis Don't Look Back in Anger" }] },
+        songs: [{ t: "Wonderwall", q: "Oasis Wonderwall", sp: "5wj4E6IsrVtn8IBJQOd0Cl" }, { t: "Don't Look Back in Anger", q: "Oasis Don't Look Back in Anger", sp: "7ppPZa3TRUSGKaks9wH7VT" }] },
       { name: "Blur", note: "英国社会を皮肉る知性と実験精神で、オアシスと対極を成した。",
-        songs: [{ t: "Song 2", q: "Blur Song 2" }, { t: "Girls & Boys", q: "Blur Girls and Boys" }] },
+        songs: [{ t: "Song 2", q: "Blur Song 2", sp: "4F64QXRV1EGHSm5jIeMmcQ" }, { t: "Girls & Boys", q: "Blur Girls and Boys", sp: "5CeL9C3bsoe4yzYS1Qz8cw" }] },
     ],
   },
   {
@@ -739,9 +739,9 @@ const GENRES = [
     era: "1994〜2005年に隆盛。以後もインディー/アンビエントと交わりながら世界中で静かに拡散し続けている。",
     artists: [
       { name: "Mogwai", note: "静寂と爆音の落差で感情を揺さぶる、ポストロックの代表格。",
-        songs: [{ t: "Mogwai Fear Satan", q: "Mogwai Mogwai Fear Satan" }, { t: "Take Me Somewhere Nice", q: "Mogwai Take Me Somewhere Nice" }] },
+        songs: [{ t: "Mogwai Fear Satan", q: "Mogwai Mogwai Fear Satan", sp: "1EvW7Sx1prPSpS06EoO7YG" }, { t: "Take Me Somewhere Nice", q: "Mogwai Take Me Somewhere Nice", sp: "3s2MZsEfiMe7ZjiRtun6wv" }] },
       { name: "Godspeed You! Black Emperor", note: "終末的スケールの大作。政治性と荘厳さでポストロックの極北を示した。",
-        songs: [{ t: "Storm", q: "Godspeed You Black Emperor Storm" }] },
+        songs: [{ t: "The Dead Flag Blues", q: "Godspeed You Black Emperor The Dead Flag Blues", sp: "0YzMEu5sGNX0JKr9mdBtzd" }] },
     ],
   },
   {
@@ -761,9 +761,9 @@ const GENRES = [
     era: "1990年代前半に確立。以後、シンフォニック/メロディック等へ細分化しつつ世界中に深く根を張った。",
     artists: [
       { name: "Death", note: "チャック・シュルディナー主導。デスメタルを技巧的・知的な芸術へ高めた。",
-        songs: [{ t: "Crystal Mountain", q: "Death Crystal Mountain" }, { t: "Pull the Plug", q: "Death Pull the Plug" }] },
+        songs: [{ t: "Crystal Mountain", q: "Death Crystal Mountain", sp: "0ItAcLSkUiePOmFGun3cSe" }, { t: "Pull the Plug", q: "Death Pull the Plug", sp: "2l0h4aBFLp9HdoaNdCTlbW" }] },
       { name: "Mayhem", note: "ノルウェジアン・ブラックメタルの中心。音楽史上最も暗い神話を背負う。",
-        songs: [{ t: "Freezing Moon", q: "Mayhem Freezing Moon" }] },
+        songs: [{ t: "Freezing Moon", q: "Mayhem Freezing Moon", sp: "4AP3a7eEOlz5sTJiWnv2C6" }] },
     ],
   },
   {
@@ -783,9 +783,9 @@ const GENRES = [
     era: "1985年に萌芽、90年代に地下で成熟、2000年代前半にメインストリームで爆発した。",
     artists: [
       { name: "Sunny Day Real Estate", note: "90年代エモの叙情性を決定づけた、内省的で美しいバンド。",
-        songs: [{ t: "Seven", q: "Sunny Day Real Estate Seven" }, { t: "In Circles", q: "Sunny Day Real Estate In Circles" }] },
+        songs: [{ t: "Seven", q: "Sunny Day Real Estate Seven", sp: "4mQfmZSNbkpIHua7lsVU7k" }, { t: "In Circles", q: "Sunny Day Real Estate In Circles", sp: "3XTXwcIu8tC9kwRFIfCIjT" }] },
       { name: "American Football", note: "ミッドウェスト・エモの金字塔。複雑なギターと繊細な感傷。",
-        songs: [{ t: "Never Meant", q: "American Football Never Meant" }] },
+        songs: [{ t: "Never Meant", q: "American Football Never Meant", sp: "6kZqCqD1r08sJAQ1TjuEpM" }] },
     ],
   },
   {
@@ -805,9 +805,9 @@ const GENRES = [
     era: "1994年のグリーン・デイ『Dookie』で爆発。2000年代前半にブリンク182らでメインストリーム化した。",
     artists: [
       { name: "Green Day", note: "パンクをスタジアムへ持ち込み、90年代以降の入門ロックを定義した。",
-        songs: [{ t: "Basket Case", q: "Green Day Basket Case" }, { t: "American Idiot", q: "Green Day American Idiot" }] },
+        songs: [{ t: "Basket Case", q: "Green Day Basket Case", sp: "6L89mwZXSOwYl76YXfX13s" }, { t: "American Idiot", q: "Green Day American Idiot", sp: "6nTiIhLmQ3FWhvrGafw2zj" }] },
       { name: "blink-182", note: "ユーモアとメロディでポップ・パンクを2000年代の巨大現象にした。",
-        songs: [{ t: "All the Small Things", q: "blink-182 All the Small Things" }, { t: "What's My Age Again?", q: "blink-182 What's My Age Again" }] },
+        songs: [{ t: "All the Small Things", q: "blink-182 All the Small Things", sp: "2m1hi0nfMR9vdGC8UcrnwU" }, { t: "What's My Age Again?", q: "blink-182 What's My Age Again", sp: "2BCEmJarwzuweXx1wTf1md" }] },
     ],
   },
   {
@@ -827,9 +827,9 @@ const GENRES = [
     era: "1996〜2003年に隆盛。ガレージ・リヴァイヴァルの登場で流行は退くが、後のメタルコアやトラップメタルに影響を残す。",
     artists: [
       { name: "Korn", note: "7弦ギターの鈍い重さと生々しいトラウマの吐露で、ニューメタルを発明した。",
-        songs: [{ t: "Freak on a Leash", q: "Korn Freak on a Leash" }, { t: "Blind", q: "Korn Blind" }] },
+        songs: [{ t: "Freak on a Leash", q: "Korn Freak on a Leash", sp: "6W21LNLz9Sw7sUSNWMSHRu" }, { t: "Blind", q: "Korn Blind", sp: "1pr9TZGOXeJUggIal1Wq3R" }] },
       { name: "System of a Down", note: "変則的な構成と政治性で、ニューメタルの枠を超えた唯一無二の存在。",
-        songs: [{ t: "Chop Suey!", q: "System of a Down Chop Suey" }, { t: "Toxicity", q: "System of a Down Toxicity" }] },
+        songs: [{ t: "Chop Suey!", q: "System of a Down Chop Suey", sp: "2DlHlPMa4M17kufBvI2lEN" }, { t: "Toxicity", q: "System of a Down Toxicity", sp: "0snQkGI5qnAmohLE7jTsTn" }] },
     ],
   },
   {
@@ -849,9 +849,9 @@ const GENRES = [
     era: "1994年頃から連続し、2000年代のインディー・ブームで拡大。以後ロックの主要な受け皿として今日まで続く。",
     artists: [
       { name: "Pavement", note: "ローファイと脱力の美学で、90年代インディーの精神性を象徴した。",
-        songs: [{ t: "Cut Your Hair", q: "Pavement Cut Your Hair" }, { t: "Range Life", q: "Pavement Range Life" }] },
+        songs: [{ t: "Cut Your Hair", q: "Pavement Cut Your Hair", sp: "4tBl1xhBg5PETpBvFnQmGl" }, { t: "Range Life", q: "Pavement Range Life", sp: "6jR6FMCEoWGdEpFVRlMZM7" }] },
       { name: "Arcade Fire", note: "壮大なアンサンブルで、2000年代インディーを感動の芸術へ押し上げた。",
-        songs: [{ t: "Wake Up", q: "Arcade Fire Wake Up" }, { t: "Rebellion (Lies)", q: "Arcade Fire Rebellion Lies" }] },
+        songs: [{ t: "Wake Up", q: "Arcade Fire Wake Up", sp: "4VAkPXhI7xQ6FHlUuY3RzB" }, { t: "Rebellion (Lies)", q: "Arcade Fire Rebellion Lies", sp: "0xOeB16JDbBJBJKSdHbElT" }] },
     ],
   },
 
@@ -873,11 +873,11 @@ const GENRES = [
     era: "2001〜08年に隆盛。ロックが大衆音楽の中心にいた、事実上『最後の大きな波』ともいわれる。",
     artists: [
       { name: "The Strokes", note: "NYの気だるいクールネスで、2000年代ロック・リヴァイヴァルの号砲を鳴らした。",
-        songs: [{ t: "Last Nite", q: "The Strokes Last Nite" }, { t: "Reptilia", q: "The Strokes Reptilia" }] },
+        songs: [{ t: "Last Nite", q: "The Strokes Last Nite", sp: "3SUusuA9jH1v6PVwtYMbdv" }, { t: "Reptilia", q: "The Strokes Reptilia", sp: "57Xjny5yNzAcsxnusKmAfA" }] },
       { name: "The White Stripes", note: "ギターとドラムだけの原始的編成で、ブルースの生々しさを現代へ甦らせた。",
-        songs: [{ t: "Seven Nation Army", q: "The White Stripes Seven Nation Army" }, { t: "Fell in Love with a Girl", q: "The White Stripes Fell in Love with a Girl" }] },
+        songs: [{ t: "Seven Nation Army", q: "The White Stripes Seven Nation Army", sp: "3dPQuX8Gs42Y7b454ybpMR" }, { t: "Fell in Love with a Girl", q: "The White Stripes Fell in Love with a Girl", sp: "21Qsj3cMVCx2xF2EVVNbEu" }] },
       { name: "Arctic Monkeys", note: "英国の若者の日常を鋭く描き、インターネット時代の最初の大型バンドになった。",
-        songs: [{ t: "I Bet You Look Good on the Dancefloor", q: "Arctic Monkeys I Bet You Look Good on the Dancefloor" }, { t: "Do I Wanna Know?", q: "Arctic Monkeys Do I Wanna Know" }] },
+        songs: [{ t: "I Bet You Look Good on the Dancefloor", q: "Arctic Monkeys I Bet You Look Good on the Dancefloor", sp: "3DQVgcqaP3iSMbaKsd57l5" }, { t: "Do I Wanna Know?", q: "Arctic Monkeys Do I Wanna Know", sp: "5FVd6KXrgO9B3JPmC8OPst" }] },
     ],
   },
   {
@@ -897,9 +897,9 @@ const GENRES = [
     era: "2002〜10年に隆盛。以後もジェント(Djent)などへ進化しつつ、現代ヘヴィ・ミュージックの主流であり続ける。",
     artists: [
       { name: "Killswitch Engage", note: "メロディック・メタルコアの様式を確立し、2000年代を代表した。",
-        songs: [{ t: "The End of Heartache", q: "Killswitch Engage The End of Heartache" }, { t: "My Curse", q: "Killswitch Engage My Curse" }] },
+        songs: [{ t: "The End of Heartache", q: "Killswitch Engage The End of Heartache", sp: "6WrusttQhWlojn3WKlPTaY" }, { t: "My Curse", q: "Killswitch Engage My Curse", sp: "6zKF4293k44ItKWJJgrhXv" }] },
       { name: "Bring Me the Horizon", note: "メタルコアから出発し、あらゆる音を飲み込んで進化を続ける現代の巨人。",
-        songs: [{ t: "Can You Feel My Heart", q: "Bring Me the Horizon Can You Feel My Heart" }, { t: "Throne", q: "Bring Me the Horizon Throne" }] },
+        songs: [{ t: "Can You Feel My Heart", q: "Bring Me the Horizon Can You Feel My Heart", sp: "0WSa1sucoNRcEeULlZVQXj" }, { t: "Throne", q: "Bring Me the Horizon Throne", sp: "5tYqrn7cItYhDGDLHt8XuH" }] },
     ],
   },
   {
@@ -919,9 +919,9 @@ const GENRES = [
     era: "2003〜09年に隆盛。MySpaceとWarped Tourを土壌に一大文化を築き、後年ノスタルジーとして繰り返し再評価される。",
     artists: [
       { name: "My Chemical Romance", note: "演劇的なコンセプトと激情で、2000年代エモを芸術的頂点へ導いた。",
-        songs: [{ t: "Welcome to the Black Parade", q: "My Chemical Romance Welcome to the Black Parade" }, { t: "Helena", q: "My Chemical Romance Helena" }] },
+        songs: [{ t: "Welcome to the Black Parade", q: "My Chemical Romance Welcome to the Black Parade", sp: "5wQnmLuC1W7ATsArWACrgW" }, { t: "Helena", q: "My Chemical Romance Helena", sp: "5dTHtzHFPyi8TlTtzoz1J9" }] },
       { name: "Fall Out Boy", note: "ひねくれた歌詞とキャッチーさで、エモ・ポップを世界的なポップへ橋渡しした。",
-        songs: [{ t: "Sugar, We're Goin Down", q: "Fall Out Boy Sugar We're Goin Down" }, { t: "Thnks fr th Mmrs", q: "Fall Out Boy Thnks fr th Mmrs" }] },
+        songs: [{ t: "Sugar, We're Goin Down", q: "Fall Out Boy Sugar We're Goin Down", sp: "2TfSHkHiFO4gRztVIkggkE" }, { t: "Thnks fr th Mmrs", q: "Fall Out Boy Thnks fr th Mmrs", sp: "3Zwu2K0Qa5sT6teCCHPShP" }] },
     ],
   },
 ];

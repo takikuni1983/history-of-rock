@@ -37,13 +37,13 @@ python3 -m http.server 8000
 - **ドラッグ**で移動、**ホイール／ピンチ**で拡大縮小、右下のボタンでも操作できます。
 - **⤢** ボタンで全体表示（ルーツ）に戻ります。
 
-## 試聴について
+## 試聴について（Spotify 埋め込み）
 
-各曲はタップするとその場に YouTube プレーヤーを埋め込み、再生を試みます。
-著作権の都合で音源そのものは同梱していません。埋め込みが再生されない、あるいは
-別の曲が表示された場合は、各曲の「↗ YT」リンクや、プレーヤー下の
-「YouTube 検索」リンクから確実に目的の曲へアクセスできます。
-（Spotify や特定の動画 ID を用いた確実なインライン再生に差し替えることも可能です。）
+各曲はタップするとその場に **Spotify のプレーヤー**を埋め込み、再生します
+（曲ごとに実在のトラック ID を紐付け済み）。Spotify にログインしていない場合は
+約 30 秒のプレビュー、ログイン済みならフル尺で再生されます。
+著作権の都合で音源そのものは同梱していません。うまく再生されない場合は、
+各曲の「Spotify ↗」リンクやプレーヤー下のリンクから Spotify アプリで開けます。
 
 ## 構成
 
@@ -73,7 +73,8 @@ js/app.js       … 系統樹の描画・操作・フロートウインドウ・
   sound: "…", visual: "…", era: "…",
   artists: [
     { name: "My Bloody Valentine", note: "…",
-      songs: [{ t: "Only Shallow", q: "My Bloody Valentine Only Shallow" }] },
+      // sp = Spotify のトラックID（open.spotify.com/track/<ID> の <ID> 部分）
+      songs: [{ t: "Only Shallow", q: "My Bloody Valentine Only Shallow", sp: "52UcjsM15hjCQAUbTW2hy1" }] },
   ],
 }
 ```
